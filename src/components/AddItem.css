@@ -1,0 +1,96 @@
+h2 {
+    color: var(--dark);
+    font-family: 'Teko', sans-serif;
+    font-weight: lighter;
+    font-size: 2rem
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 2.5fr 0.5fr;
+    margin-left: -20px;
+
+}
+
+.grid-item {
+    margin: 5px;
+    align-self: center;
+}
+
+#addItem-button {
+    background-color: var(--light);
+    color: var(--dark);
+    font-family: 'Teko', sans-serif;
+    font-weight: lighter;
+    font-size: 2rem;
+    border: var(--dark) 3px solid;
+    border-radius: 15px;
+}
+
+#addItem-button:hover {
+    background-color: var(--dark);
+    color: var(--light)
+}
+
+#addItem-input {
+    border-radius: 15px;
+    border: var(--dark) 3px solid;
+    text-align: center;
+    font-family: 'Teko', sans-serif;
+    font-weight: lighter;
+    width: 90%;
+}
+
+@media (min-width: 0px) {  
+    h2 {
+      font-size: 1.25rem;
+    }
+
+    #addItem-input {
+        border-radius: 15px;
+        border: var(--dark) 1px solid;
+        border-radius: 10px;
+        font-size: 1.2rem;
+    }
+
+    #addItem-button {
+        font-size: 1rem;
+        border-radius: 10px;
+    }
+  }
+  
+  @media (min-width: 640px) {
+    h2 {
+      font-size: 1.75rem;
+    }
+
+    #addItem-input {
+        border-radius: 15px;
+        border: var(--dark) 2px solid;
+        font-size: 1.5rem;
+        border-radius: 10px;
+    }
+
+    #addItem-button {
+        font-size: 1.5rem;
+        border-radius: 10px;
+    }
+  }
+  
+  @media (min-width: 1080px) {
+    h2 {
+      font-size: 2.5rem;
+    }
+
+    #addItem-input {
+        border-radius: 15px;
+        border: var(--dark) 3px solid;
+        font-size: 2.0rem;
+    }
+
+    #addItem-button {
+        font-size: 2rem;
+        border-radius: 15px;
+    }
+  }
